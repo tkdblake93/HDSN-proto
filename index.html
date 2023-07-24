@@ -7,7 +7,7 @@
     <title>Human Design System &#x25C6; Norway</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body onload="isYScrollable()">
+  <body onload="main()">
     <div class="container">
       <img
         src="./assets/images/HtopLeft.gif"
@@ -29,7 +29,13 @@
         alt="Norway"
         class="img-corner n-btm-right"
       />
-      <div class="outline"></div>
+      <div class="outline">
+        <video id="splashVideo" width="100%" height="99%" controls loop>
+          <source src="./assets/videos/HDSN_LOGO_ANIMATED.m4v" type="video/mp4">
+          <source src="./assets/videos/HDSN_LOGO_ANIMATED.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+    </div>
     </div>
     <script src="./assets/js/main.js"></script>
   </body>

@@ -1,3 +1,7 @@
+function main() {
+  isYScrollable();
+}
+
 // Hide the y-axis scrollbar when not needed
 const outlineScroll = document.querySelector('.outline');
 function isYScrollable() {
