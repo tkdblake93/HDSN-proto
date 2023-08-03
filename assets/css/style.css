@@ -25,8 +25,9 @@ body {
 }
 
 .h-top-left {
-  margin-top: 5px;
-  margin-left: 15px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
 }
 
 .d-top-right {
@@ -50,12 +51,15 @@ body {
 /* OUTLINE */
 
 .outline {
-  margin: -17.75px 39px;
+  position: absolute;
+  top: 41px;
+  left: 39px;
   padding: 10px 25px;
   height: calc(100vh - 57px);
   width: calc(100vw - 77px);
   border: 3px solid #9b342f;
   overflow-y: scroll;
+  overflow-x: hidden;
   z-index: 4;
 }
 
@@ -72,4 +76,15 @@ body {
   display: flex;
   flex-direction: column-reverse;
   z-index: 10;
+}
+
+.hero {
+  margin: -10px -25px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero img {
+  width: 100%;
+  z-index: -1;
 }
