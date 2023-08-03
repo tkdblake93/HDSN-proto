@@ -58,3 +58,18 @@ body {
   overflow-y: scroll;
   z-index: 4;
 }
+
+#splashVideo {
+  width: 100%;
+  height: 99%;
+}
+
+.volumeButtons {
+  position: relative;
+  top: 12vh;
+  left: -5px;
+  width: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 10;
+}
