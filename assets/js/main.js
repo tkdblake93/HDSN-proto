@@ -15,7 +15,7 @@ function isYScrollable() {
 function videoIsLoaded() {
   setTimeout(function() {
     redirectByLang();
-  }, 25000);
+  }, 18000);
 }
 
 function redirectByLang() {
