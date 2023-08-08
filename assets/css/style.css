@@ -108,6 +108,7 @@ body {
 /* FONT FACE */
 p {
   font-family: "Myriad Pro Regular", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 strong, h1, h2, h3, h4, h5, h6 {
@@ -116,4 +117,48 @@ strong, h1, h2, h3, h4, h5, h6 {
 
 em {
   font-family: "Myriad Pro Bold Italic", Arial, Helvetica, sans-serif;
+}
+
+/* MEDIA QUERY FOR SCREEN WIDTHS < 768px */
+
+@media all and (max-width: 767px) {
+  /* CORNER IMAGES */
+  .img-corner {
+    height: 26px;
+    width: 26px;
+  }
+
+  .h-top-left {
+    position: absolute;
+    top: 29px;
+    left: 5px;
+  }
+  
+  .d-top-right {
+    position: absolute;
+    top: 29px;
+    right: 5px;
+  }
+  
+  .s-btm-left {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .n-btm-right {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  /* OUTLINE */
+
+  .outline {
+    top: 41px;
+    left: 17px;
+    padding: 10px;
+    height: calc(100vh - 57px);
+    width: calc(100vw - 33px);
+  }
 }
