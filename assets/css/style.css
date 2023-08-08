@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url(../fonts/Myriad\ Pro\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url(../fonts/Myriad\ Pro\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Italic";
+  src: url(../fonts/Myriad\ Pro\ Bold\ Italic.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -88,4 +103,17 @@ body {
 .hero img {
   width: 100%;
   z-index: -1;
+}
+
+/* FONT FACE */
+p {
+  font-family: "Myriad Pro Regular", Arial, Helvetica, sans-serif;
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+  font-family: "Myriad Pro Bold", Arial, Helvetica, sans-serif;
+}
+
+em {
+  font-family: "Myriad Pro Bold Italic", Arial, Helvetica, sans-serif;
 }
