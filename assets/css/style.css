@@ -105,6 +105,49 @@ body {
   z-index: -1;
 }
 
+/* NAV-CONTAINER, NAV-MENU */
+
+#nav-container {
+  position: absolute;
+  top: 22px;
+  display: flex;
+}
+
+#nav-menu {
+  margin: 0 0 0 65px;
+  width: calc(87vw - 77px);
+}
+
+#nav-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#nav-menu a {
+  font-family: "Myriad Pro Bold";
+  text-decoration: none;
+  color: #666;
+}
+
+#nav-flags {
+  margin: 0 65px 0 0;
+  width: calc(13vw - 77px);
+}
+
+#nav-flags ul {
+  display: flex;
+  /* justify-content: space-evenly; */
+  list-style: none;
+}
+
+#nav-flags li {
+  position: absolute;
+  /* top: -7px; */
+  top: -22px;
+  font-size: 1.75rem;
+}
+
 /* FONT FACE */
 p {
   font-family: "Myriad Pro Regular", Arial, Helvetica, sans-serif;
@@ -160,5 +203,15 @@ em {
     padding: 10px;
     height: calc(100vh - 57px);
     width: calc(100vw - 33px);
+  }
+
+  /* NAV-MENU */
+
+  #nav-menu {
+    display: none;
+  }
+
+  #nav-flags {
+    display: none;
   }
 }
