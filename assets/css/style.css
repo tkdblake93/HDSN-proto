@@ -116,19 +116,18 @@ body {
 
 #nav-menu {
   margin: 0 15px 0 69px;
-  /* margin: 0 0 0 65px; */
-  /* width: calc(87vw - 77px); */
   width: calc(90vw - 77px);
   z-index: 5;
 }
 
 #nav-menu ul.nav-menu-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
 }
 
 #nav-menu li.nav-menu-item, #nav-menu a {
+  display: inline-block;
   color: #666;
   cursor: pointer;
   font-family: "Myriad Pro Bold";
@@ -136,29 +135,16 @@ body {
   position: relative;
 }
 
-/* #home, #about, #contact, #media {
-  width: 15%;
-}
-
-#about {
-  width: 17%
-}
-
-#courses, #readings {
-  width: 19%;
-} */
-
 #nav-menu ul.nav-submenu-list {
   display: block;
-  background: transparent;
+  position: absolute;
+  background: #ccc;
   list-style: none;
   line-height: 2.5;
-  margin-top: 11px;
+  border-top: 3px solid #9b342f;
   margin-left: -9px;
   padding: 5px;
-  /* opacity: 0;
-  visibility: hidden;
-  transition: opacity 200ms ease-in-out; */
+  width: inherit;
 }
 
 #nav-menu a:hover ul.nav-submenu-list {
@@ -180,9 +166,59 @@ body {
   color: #ccc;
 }
 
+/* SUBMENUS */
+.submenu-home {
+  display: none;
+}
+nav ul.nav-menu-list li#home:hover .submenu-home {
+  display: block;
+}
+
+.submenu-courses {
+  display: none;
+}
+nav ul.nav-menu-list li#courses:hover .submenu-courses {
+  display: block;
+}
+
+.submenu-readings {
+  display: none;
+}
+nav ul.nav-menu-list li#readings:hover .submenu-readings {
+  display: block;
+}
+
+.submenu-events {
+  display: none;
+}
+nav ul.nav-menu-list li#events:hover .submenu-events {
+  display: block;
+}
+
+.submenu-about {
+  display: none;
+}
+nav ul.nav-menu-list li#about:hover .submenu-about {
+  display: block;
+}
+
+.submenu-contact {
+  display: none;
+}
+nav ul.nav-menu-list li#contact:hover .submenu-contact {
+  display: block;
+}
+
+.submenu-media {
+  display: none;
+}
+nav ul.nav-menu-list li#media:hover .submenu-media {
+  display: block;
+}
+
+/* LANGUAGE FLAGS */
 #nav-flags {
   margin: 0 65px 0 0;
-  /* width: calc(13vw - 77px); */
   width: calc(10vw - 77px);
 }
 
@@ -214,7 +250,7 @@ em {
 
 /* MEDIA QUERY FOR SCREEN WIDTHS < 768px */
 
-@media all and (max-width: 899px) {
+@media all and (max-width: 819px) {
   /* CORNER IMAGES */
   .img-corner {
     height: 26px;
