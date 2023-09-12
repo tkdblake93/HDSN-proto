@@ -1,5 +1,6 @@
 function main() {
   isYScrollable();
+  toggleHamburgerMenu();
 }
 
 // Hide the y-axis scrollbar when not needed
@@ -38,3 +39,15 @@ function vol100() {
   volumePercent.volume = 1;
 }
 
+// hamburger-menu-icon | mobile-submenu-container
+let toggleHamburgerMenu = () => {
+  let hamburgerMenuIcon = document.querySelector('.hamburger-menu-icon');
+  let mobileSubmenuContainer = document.querySelector('.mobile-submenu-container');
+  hamburgerMenuIcon.addEventListener("click", function() {
+    if (mobileSubmenuContainer.style.display == "none") {
+      mobileSubmenuContainer.style.display = "block";
+    } else {
+      mobileSubmenuContainer.style.display = "none";
+    }
+  });
+}

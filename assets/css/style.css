@@ -152,6 +152,7 @@ body {
 }
 
 .mobile-submenu-container {
+  display: none;
   background: #ccc;
   border-top: 2px solid #9b342f;
   color: #666;
